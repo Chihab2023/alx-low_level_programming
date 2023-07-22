@@ -1,13 +1,13 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - prints all
+ * print_all - a function that prints anything
  * @format: list of types of arguments
  */
 void print_all(const char * const format, ...)
 {
 	int x = 0;
-	char *str, *sepr = "";
+	char *str, *sep = "";
 
 	va_list list;
 
@@ -32,13 +32,13 @@ void print_all(const char * const format, ...)
 					str = va_arg(list, char *);
 					if (!str)
 						str = "(nil)";
-					printf("%s%s", sepr, str);
+					printf("%s%s", sep, str);
 					break;
 				default:
 					x++;
 					continue;
 			}
-			sepr = ", ";
+			sep = ", ";
 			x++;
 		}
 	}
