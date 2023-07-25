@@ -18,7 +18,7 @@ int is_palindrome(char *s)
 }
 
 /**
- * _strlen_recursion - function that 
+ * _strlen_recursion - function that
  * returns the length of a string
  * @s: string to calculate the length of
  *
